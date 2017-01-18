@@ -1,0 +1,262 @@
+
+.content-wrapper 
+{
+    background: #f8fafc;
+}
+   
+.user-profiles
+{
+
+vertical-align: middle;
+    background: #fff;
+    text-align: center;
+    float: left;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.user-profiles span
+{
+    width:100%;
+    float:left;
+    line-height:25px;
+    color:#7F7F7F;
+    font-size:12px;
+    
+}
+.circle-orange
+{
+    background: #fd6f2d;
+    text-align: center;
+    border-radius: 100%;
+    color: white;
+    height: 100px;
+    font-weight: bold;
+    width: 100px;
+    display: table;
+    margin: 20px auto;
+    line-height:100px;
+}
+ .white-squre
+{
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    vertical-align: middle;
+    display: inline-block;
+    line-height:50px;    
+}
+        
+        
+.white-squre img        
+{
+max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+       
+input[type="checkbox"] 
+{
+  display: none;
+}
+label {
+  cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 15px;
+}
+input[type="checkbox"] + label:before 
+{
+    border: 1px solid #7f83a2;
+    content: "\00a0";
+    display: inline-block;
+    height: 22px;
+    margin: 0 0em 0 0;
+    padding: 0;
+    vertical-align: middle;
+    width: 22px;
+}
+input[type="checkbox"]:checked + label:before 
+{
+  background: #35537B;
+  color: #fff;
+  content: "\2713";
+  text-align: center;
+}
+
+  
+ 
+  .box-model 
+{
+   padding: 6px 4px;
+}
+.box-model-inner{
+    width: 100%;
+    float: left;
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: #f8f9fb;
+}
+  .box-model  img
+{
+    max-width: 54px;
+    float:left;
+    padding:0 5px 0 0;
+}
+.box-model:nth-child(4n+1)
+{
+  margin-left:0px;
+}
+.box-model:nth-child(4n)
+{
+ margin-right:0px;
+}
+.box-model h4
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin:0px;
+    padding:0px;
+    font-size:12px;
+    white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+    
+}
+
+.box-model h3
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.img-left
+
+{
+    position: relative;
+    min-height: 50px;
+    float: left;
+    width: -moz-calc(100% - 80px);
+    width: -webkit-calc(100% - 80px);
+    width: -ms-calc(100% - 80px);
+    width: calc(100% - 80px);
+}
+.right-user label
+{
+    float:right;
+    width:auto;
+}
+.box-squre
+
+{
+    float:left;
+    width:auto;
+}
+middle-content
+{
+    float:left;
+    width:100%;
+      white-space: nowrap;
+}
+
+@media only screen and (max-width:1024px)
+{
+    .box-model
+    {
+        width:24%;
+        margin: 10px 6px 10px 6px;
+    }
+}
+
+@media only screen and (max-width:991px)
+{
+    .box-model
+    {
+        width:48%;
+        margin: 10px 12px 10px 11px;
+    }
+    
+    .box-model:nth-child(2n+1)
+        {
+            margin-left:0px;
+        }
+.box-model:nth-child(2n)
+        {
+            margin-right:0px;
+        }
+}
+
+@media only screen and (max-width:767px)
+{
+    .box-model
+    {
+        width:100%;
+        margin: 10px 0px;
+    }
+}
+
+/******* talkeys home ********/
+
+.header-bottom-wrapper{
+    width: 100%;
+    float: left;
+    background: #fff;
+    color: #7F7F7F;
+}
+.header-bottom-wrapper h3, .header-bottom-wrapper h3 > span {
+    font-weight: bold;
+}
+header p {
+    letter-spacing: 0.2px;
+}
+.slider-menu-wrapper{
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 10px 0px 15px;
+}
+.slider-menu-wrapper a{
+    min-width: 80px;
+    float: left;
+    color: #539ddd;
+    text-align: center;
+    position: relative;
+    padding: 0px 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.slider-menu-wrapper a:not(:last-of-type):after{
+    content: "|";
+    position: absolute;
+    top: -1px;
+    right: 0;
+}
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 16px;
+    margin-top: -10px;
+    z-index: 10;
+    cursor: pointer;
+    -moz-background-size: 14px 32px;
+    -webkit-background-size: 14px 32px;
+    background-size: 14px 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+.swiper-button-next{right: 0px}
+.swiper-button-prev{left: 0px}

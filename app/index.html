@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>TalkAbout</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width"> 
+  </head>
+  <body ng-app="iTalkApp">
+      <!-- build:css css/talkAbout.css -->
+      <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+      <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+      
+      <!--CSS files start-->
+      <link rel="stylesheet" href="./styles/css/bootstrap.css"/>
+      <link rel="stylesheet" href="./styles/css/headfoot.css"/>
+      <link rel="stylesheet" href="./styles/css/jquery-ui.css"/>
+      <link rel="stylesheet" href="./styles/css/main.css"/>
+      <link rel="stylesheet" href="./styles/css/reset.css"/>
+      <link rel="stylesheet" href="./styles/css/styles.css"/>
+      <link rel="stylesheet" href="./styles/css/swiper.min.css"/>
+      <link rel="stylesheet" href="./styles/css/tag_display.css"/>
+      <link rel="stylesheet" href="./styles/css/user-css.css"/>
+      <!--CSS files end-->
+      
+      <!-- endbuild -->
+      <!-- build:js js/talkAbout.min.js -->
+   <!-- Angular libraries are included here -->
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+	 <!-- Configs are included here -->
+    <script src="./scripts/iTalk-module/app.js"></script>
+    <script src="./scripts/iTalk-module/config.js"></script>
+	
+	<!--Controllers files-->
+	<script src="./scripts/iTalk-module/contollers/signUpController.js"></script>
+	
+	<!--Services files-->
+	<script src="./scripts/iTalk-module/services/signUpService.js"></script>
+	
+	<!--Directives files-->
+	<script src="./scripts/iTalk-module/directives/validate-email-directive.js"></script>
+	<script src="./scripts/iTalk-module/directives/validate-telephone-directive.js"></script>
+	<script src="./scripts/iTalk-module/directives/validate-zipcode-directive.js"></script>
+	
+	
+	<!--Filters files-->
+	<script src="./scripts/iTalk-module/filter/capitalizeFilter.js"></script>
+	<script src="./scripts/iTalk-module/filter/formatMDNFilter.js"></script>
+	
+	<!--Common Utils files-->
+	<script src="./scripts/iTalk-module/utils/commonUtils.js"></script>
+	<script src="./scripts/iTalk-module/utils/urlUtils.js"></script>
+	
+	<!--Factory files-->
+	<script src="./scripts/iTalk-module/model/factory/sort-factory.js"></script>
+	<script src="./scripts/iTalk-module/model/factory/api-factory.js"></script>
+	<script src="./scripts/iTalk-module/model/factory/paymentMethodFactory.js"></script>
+	<script src="./scripts/iTalk-module/model/factory/search-factory.js"></script>
+    
+    <!-- Nav Starts -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://talkeys.techdoyen.com/"><img src="images/Logo_v2.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <form class="searchTalkey">
+            <div class="search-wrapper" id="SearchTk">
+              <input id="searchTalkey" type="search" placeholder="search talkeys ( eg : techpark_driver_issues )" class="search-input"/><i class="fa fa-search" id="SearchTk" aria-hidden="true"></i>
+            </div>
+          </form>
+          <div class="right-ment-bar">
+            <div class="right-menu-column">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="#" class="btnspan-parent"><span class="buttonspan">New iTag</span></a></li>
+                <li><a href="#">itags</a></li>
+              </ul>
+            </div>
+            <div class="right-menu-column">
+              <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle location-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-map-marker marker-cust" aria-hidden="true"></i><b>Kerala</b> <span class="caret"></span></a>
+                  <!-- <ul class="dropdown-menu">
+                    <li><a href="#">Kerala</a></li>
+                    </ul> -->
+                </li>
+                <li class="user-profile">
+                  <img src="images/user.png" data-toggle="dropdown">
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Tags</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+   <!-- Nav Ends -->
+      
+   <!-- endbuild -->   
+   <div ui-view id="main-page"></div>
+      
+   <!-- Footer Starts -->
+    <footer >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+                        <li>
+                            <a href="terms_privacy.html">Terms & Privacy</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+                         <li>
+                            <a href="mail_notify_tags.html">Notification Tags</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+                        <li>
+                            <a href="mail_notify_follow.html">Notification follower</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+                        <li>
+                            <a href="userhome_tag_creation.html">New iTags</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+                         <li>
+                            <a href="userhome_itags.html">Userhome iTags</a>
+                        </li>
+                        <li class="footer-menu-divider">⋅</li>
+                         <li>
+                            <a href="userhome_individual_itag.html">Userhome Individual itag</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; talkeys.co.in. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  <!-- Footer Ends -->
+   
+  </body>
+</html>

@@ -1,0 +1,17 @@
+.panel-color-new {
+    background: #fff;
+}
+.sideBar img {
+    border-radius: 0%;
+}
+.mainSection img {
+    border-radius: 0%;
+}
+.mainCnt_para{font-size: 18px; padding: 10px 0px}
+.para-wrapper p:first-of-type{padding-top: 10px}
+.img-responsive-cust{float: right; max-width: 160px; max-height: 160px;}
+.mainSec{color: #777676 !important; font-size: 17px !important;}
+.mainImgnew{max-width: 74px}
+.trendArea-new{padding-right: 10px;}
+a.green{color: #43b972}
+.custom-readmore{color: rgb(80, 120, 202); position: relative; top: -20px}

@@ -1,0 +1,101 @@
+.navbar-default{background: #fff}
+.navbar-brand {
+    height: 60px;
+    padding: 0px 0px;
+    padding-right: 15px;
+    line-height: 60px;
+    text-align: left;
+}
+.navbar-brand img{
+    max-width: 150px;
+    display: inline-block;
+}
+.navbar-toggle{margin-top: 13px;}
+.navbar-nav > li > a > span.buttonspan{
+    width:100px;
+    height: auto;
+    float: none;
+    border: 2px solid #f17538;
+    color: #f17538;
+    color: #2F3846 !important;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 6px 10px;
+}
+.location-toggle>b{
+    max-width: 90%;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    color: #8a8383;
+}
+.marker-cust{
+    color: #599e04;
+    font-size: 22px;
+    float: left;
+    margin-right: 8px;
+    margin-top: -1px;
+}
+.location-toggle .caret {
+    margin-left: 8px;
+    border-top: 8px solid #8a8383;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+.location-toggle+ul{
+    max-height: 240px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.user-profile{margin-left: 10px; height: 60px; line-height: 60px;}
+.user-profile img{
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 100%;
+    display: inline-block;
+}
+.search-btn-header i{font-size: 20px;}
+@media (min-width:768px){
+    .navbar-nav > li > a {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 60px;
+        line-height: 60px;
+        color: #2F3846 !important;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .right-ment-bar{float: right;}
+    .right-menu-column{
+        float: left;
+    }
+    .right-menu-column:first-of-type{
+        border-right: 1px solid #e7e7e7;
+        padding-right: 15px;    
+    }
+    .location-toggle>b{
+        max-width: 200px;
+    }
+    .marker-cust{
+        line-height: 60px;
+        margin-top: 0px;
+    }
+    .navbar-nav > li > a > span.buttonspan{
+        width:100px;
+        height: 34px;
+        float: left; 
+        line-height: 30px;
+        margin-top: 13px;
+        padding: 0px;
+    }
+}
+@media (max-width:767px){
+    .btnspan-parent{
+        line-height: 32px !important;
+    }
+    .user-profile{margin-top: 10px}
+}

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Talkeys</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <!-- thirdparty CSS END-->
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- Bootstrap core CSS END-->
+    <!-- Custom styles for this template-->
+    <link href="css/headfoot.css"rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Custom styles for this template END-->
+    <link href="css/user-css.css" rel="stylesheet"/>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="assets/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://talkeys.techdoyen.com/"><img src="images/Logo_v2.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <form class="searchTalkey">
+            <div class="search-wrapper" id="SearchTk">
+              <input id="searchTalkey" type="search" placeholder="search talkeys ( eg : techpark_driver_issues )" class="search-input"/><i class="fa fa-search" id="SearchTk" aria-hidden="true"></i>
+            </div>
+          </form>
+          <div class="right-ment-bar">
+            <div class="right-menu-column">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="#" class="btnspan-parent"><span class="buttonspan">New iTag</span></a></li>
+                <li><a href="#">itags</a></li>
+              </ul>
+            </div>
+            <div class="right-menu-column">
+              <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle location-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-map-marker marker-cust" aria-hidden="true"></i><b>Kerala</b> <span class="caret"></span></a>
+                  <!-- <ul class="dropdown-menu">
+                    <li><a href="#">Kerala</a></li>
+                    </ul> -->
+                </li>
+                <li class="user-profile">
+                  <img src="images/user.png" data-toggle="dropdown">
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Tags</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="column container " id="main">
+      <div class="full col-sm-9">
+        <div class="row">
+          <div class="col-sm-8 mainCnt">
+            <div class="panel panel-default panel-color-new" style="float: left;">
+              <div class="panel-body col-sm-12">
+                <div class="mainSection col-sm-12">
+                  <div class="col-sm-12 col-md-6 followSection">
+                    <div class="mainImg col-sm-3">
+                      <img src="assets/images/img1.jpg" class="img-responsive">
+                    </div>
+                    <div class="col-sm-9 tagTitle">
+                      <h4>Tvm_Runners_Club</h4> 
+                      <small class="trendArea col-sm-4"><a href="#" >Festival</a></small>
+                      <small class="trendArea col-sm-4"><a href="#" >142 talks</a></small>
+                      <small class="trendArea col-sm-4"><a href="#" >236 Following</a></small>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 searchExpand">
+                      <button class="btn btn-share" data-toggle="dropdown" aria-hidden="true"><i class="fa fa-share" aria-hidden="true"></i></button>
+                          <ul class="dropdown-menu social" style="right: 0;left: inherit;">
+                                <li>
+                                  <a data-original-title="Twitter" rel="tooltip"  href="#" class="btn btn-twitter twitter" data-placement="left">
+                                  <i class="fa fa-twitter"></i>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a data-original-title="Facebook" rel="tooltip"  href="#" class="btn btn-facebook facebook" data-placement="left">
+                                  <i class="fa fa-facebook"></i>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a data-original-title="Google+" rel="tooltip"  href="#" class="btn btn-google google-plus" data-placement="left">
+                                  <i class="fa fa-google-plus"></i>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a data-original-title="LinkedIn" rel="tooltip"  href="#" class="btn btn-linkedin linkedin" data-placement="left">
+                                  <i class="fa fa-linkedin"></i>
+                                  </a>
+                                </li>
+                      </ul>
+                       <button class="btn btn-comment"><i class="fa fa-commenting-o" aria-hidden="true"></i></button>
+                       <button class="btn btn-users" data-toggle="collapse" data-target="#mainForm"><i class="fa fa-users" aria-hidden="true"></i></button>
+                       
+                  </div>
+                </div>
+                <div class="panel-body col-sm-12">
+                  <form id="mainForm" class="collapse col-sm-12">
+                    <div class="mainSearchBox">
+                      <div class="mainSearch">
+                        <textarea id="mainSearch" class="form-control" placeholder="let me talk !"></textarea>
+                      </div>
+                    </div>
+                    <div id="mainSearchBtn">
+                      <div class="card card-block">
+                        <div class="searchCamera"><i title="Picture" data-toggle="tooltip"  class="fa fa-camera" aria-hidden="true"></i></div>
+                        <div class="searchCamera"><input type="submit" class="searchSubmit"></div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="col-sm-12"><hr></div>
+                </div>
+<!--
+                <div class="col-sm-12 tagImg">
+                  <div class="imgUser"><img src="assets/images/img1.jpg" class="img-circle-cnt"></div>
+                  <span> Engineer, iTag Tech | 5 iTags <br > <small>1 hour before</small></span>
+                </div>
+-->
+                <div class="col-sm-12">
+                  <img src="assets/images/tvm_runners_club.jpg" class="img-responsive">
+                </div>
+                <div class="col-sm-12">
+                    <b class="bold-big">Your Run will make many walk! standared Chartered Mumbai marathon 2017 <br/>Would a like a disabled person to walk and Run just like you</b>
+                   <p class="paragraph-text">
+                  Design, build, test, and prototype using Bootstrap in real-time from your Web browser. Bootply combines the power of hand-coded HTML, CSS and JavaScript with the benefits of responsive design using Bootstrap. Find and showcase Bootstrap-ready snippets in the 100% free Bootply.com code repository.
+                       </p>
+                    <b class="bold-small">How can you take part?</b>
+                    <p>
+                  Design, build, test, and prototype using Bootstrap in real-time from your Web browser. Bootply combines the power of hand-coded HTML, CSS and JavaScript with the benefits of responsive design using Bootstrap. Find and showcase Bootstrap-ready snippets in the 100% free Bootply.com code repository.
+                       </p>
+                </div>
+                <div class="col-md-12 tagShare activeTags">
+                  <i class="fa fa-heart" aria-hidden="true"></i><span>50</span>
+                  
+                </div>
+              </div>
+              <div class="panel-body col-sm-12">
+                <hr>
+                <div class="col-sm-12 tagImg">
+                  <div class="imgUser"><img src="assets/images/img1.jpg" class="img-circle-cnt"></div>
+                  <span> Engineer, iTag Tech | 5 iTags <br > <small>2 hour before</small></span>
+                </div>
+                <div class="col-sm-12">
+                  <img src="assets/images/tvm_runners_club.jpg" class="img-responsive">
+                </div>
+                <div class="col-sm-12">
+                    <b class="bold-big">Your Run will make many walk! standared Chartered Mumbai marathon 2017 <br/>Would a like a disabled person to walk and Run just like you</b>
+                   <p class="paragraph-text">
+                  Design, build, test, and prototype using Bootstrap in real-time from your Web browser. Bootply combines the power of hand-coded HTML, CSS and JavaScript with the benefits of responsive design using Bootstrap. Find and showcase Bootstrap-ready snippets in the 100% free Bootply.com code repository.
+                  Design, build, test, and prototype using Bootstrap in real-time from your Web browser. Bootply combines the power of hand-coded HTML, CSS and JavaScript with the benefits of responsive design using Bootstrap. Find and showcase Bootstrap-ready snippets in the 100% free Bootply.com code repository.
+                       </p>
+                </div>
+                <div class="col-md-12 tagShare">
+                  <i class="fa fa-heart" aria-hidden="true"></i><span>60</span> 
+                  
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden-xs col-sm-4 sideBar rightSidebar">
+            <div class="sideBar leftSidebar col-sm-10">
+              <div class="panel panel-default following">
+                <div class="panel-heading">
+                  <h4><span class="side-ttile-icon follwing-icon"><i class="fa fa-users" aria-hidden="true"></i></span>Following</h4>
+                </div>
+                <div class="panel-body">
+                  <img src="assets/images/img1.jpg" class="img-responsive">
+                  <h6 style="margin-bottom: 0px;">tvm_onam_celebrations 
+                  </h6>
+                      <small class="trendArea"><a href="#" >Festival</a></small>
+                </div>
+                <div class="panel-body">
+                  <img src="assets/images/img1.jpg" class="img-responsive">
+                  <h6>tvm_onam_celebrations
+                  </h6>
+                </div>
+                <div class="panel-body">
+                  <img src="assets/images/img1.jpg" class="img-responsive">
+                  <h6 style="margin-bottom: 0px;">tvm_onam_celebrations 
+                  </h6>
+                      <small class="trendArea"><a href="#" >Festival</a></small>
+                </div>
+                <div class="panel-body">
+                  <img src="assets/images/img1.jpg" class="img-responsive">
+                  <h6 style="margin-bottom: 0px;">tvm_onam_celebrations 
+                  </h6>
+                      <small class="trendArea"><a href="#" >Festival</a></small>
+                </div>
+                <div class="panel-body">
+                  <img src="assets/images/img1.jpg" class="img-responsive">
+                  <h6 style="margin-bottom: 0px;">tvm_onam_celebrations 
+                  </h6>
+                      <small class="trendArea"><a href="#" >Festival</a></small>
+                </div>
+                <div id="follow" class="collapse">
+                  <div class="panel-body">
+                    <img src="assets/images/img1.jpg" class="img-responsive">
+                    <h6 style="margin-bottom: 0px;">tvm_onam_celebrations 
+                  </h6>
+                      <small class="trendArea"><a href="#" >Festival</a></small>
+                  </div>
+                  <div class="panel-body">
+                    <img src="assets/images/img1.jpg" class="img-responsive">
+                    <h6 style="margin-bottom: 0px;">tvm_onam_celebrations 
+                  </h6>
+                      <small class="trendArea"><a href="#" >Festival</a></small>
+                  </div>
+                </div>
+                <div data-toggle="collapse" class="collapseBtn" data-target="#follow">...</div>
+              </div>
+            </div>
+            <div class="panel panel-default panel-today col-sm-12">
+              <div class="panel-heading">
+                <h4><span class="side-ttile-icon tt-icon"><i class="fa fa-comments" aria-hidden="true"></i></span>Todays Talks</h4>
+              </div>
+              <div class="panel-body">
+                <h6>tvm_onam_celebrations <br>
+                  <small class="trendArea"><a href="#" >sports</a></small>
+                </h6>
+                <div class="followCnt">Onam festival celibrations start s in the month of september. It lasts nearly 15 days including citywide celibrations</div>
+                  <div class="follow-user">Subramanian Engineer</div>
+                <div class="followLink">
+                  <a data-toggle="tooltip" data-placement="bottom" title="tvm_onam_celebrations itag is added to your list" href="#">follow</a> 
+                  <a href="">talk</a>
+                </div>
+              </div>
+              <div class="panel-body">
+                <h6>tvm_onam_celebrations <br>
+                  <small class="trendArea"><a href="#" >sports</a></small>
+                </h6>
+                <div class="followCnt">Onam festival celibrations start s in the month of september. It lasts nearly 15 days including citywide celibrations</div>
+                  <div class="follow-user">Subramanian Engineer</div>
+                <div class="followLink"><a data-toggle="tooltip" data-placement="bottom" title="tvm_onam_celebrations itag is added to your list" href="#">follow</a> <a href="">talk</a></div>
+              </div>
+              <div class="panel-body">
+                <h6>tvm_onam_celebrations <br>
+                  <small class="trendArea"><a href="#" >sports</a></small>
+                </h6>
+                <div class="followCnt">Onam festival celibrations start s in the month of september. It lasts nearly 15 days including citywide celibrations</div>
+                  <div class="follow-user">Subramanian Engineer</div>
+                <div class="followLink"><a data-toggle="tooltip" data-placement="bottom" title="tvm_onam_celebrations itag is added to your list" href="#">follow</a> <a href="">talk</a></div>
+              </div>
+              <div class="panel-body">
+                <h6>tvm_onam_celebrations <br>
+                  <small class="trendArea"><a href="#" >sports</a></small>
+                </h6>
+                <div class="followCnt">Onam festival celibrations start s in the month of september. It lasts nearly 15 days including citywide celibrations</div>
+                  <div class="follow-user">Subramanian Engineer</div>
+                <div class="followLink"><a data-toggle="tooltip" data-placement="bottom" title="tvm_onam_celebrations itag is added to your list" href="#">follow</a> <a href="">talk</a></div>
+              </div>
+              <div class="panel-body">
+                <h6>tvm_onam_celebrations <br>
+                  <small class="trendArea"><a href="#" >sports</a></small>
+                </h6>
+                <div class="followCnt">Onam festival celibrations start s in the month of september. It lasts nearly 15 days including citywide celibrations</div>
+                  <div class="follow-user">Subramanian Engineer</div>
+                <div class="followLink"><a data-toggle="tooltip" data-placement="bottom" title="tvm_onam_celebrations itag is added to your list" href="#">follow</a> <a href="">talk</a></div>
+              </div>
+              <div id="tTaks" class="collapse">
+                <div class="panel-body">
+                  <h6>tvm_onam_celebrations <br>
+                    <small class="trendArea"><a href="#" >sports</a></small>
+                  </h6>
+                  <div class="followCnt">Onam festival celibrations start s in the month of september. It lasts nearly 15 days including citywide celibrations</div>
+                    <div class="follow-user">Subramanian Engineer</div>
+                  <div class="followLink"><a data-toggle="tooltip" data-placement="bottom" title="tvm_onam_celebrations itag is added to your list" href="#">follow</a> <a href="">talk</a></div>
+                </div>
+                <div class="panel-body">
+                  <h6>tvm_onam_celebrations <br>
+                    <small class="trendArea"><a href="#" >sports</a></small>
+                  </h6>
+                  <div class="followCnt">Onam festival celibrations start s in the month of september. It lasts nearly 15 days including citywide celibrations</div>
+                    <div class="follow-user">Subramanian Engineer</div>
+                  <div class="followLink"><a data-toggle="tooltip" data-placement="bottom" title="tvm_onam_celebrations itag is added to your list" href="#">follow</a> <a href="">talk</a></div>
+                </div>
+              </div>
+              <div data-toggle="collapse" class="collapseBtn" data-target="#tTaks">...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="postModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            Update Status
+          </div>
+          <div class="modal-body">
+            <form class="form center-block">
+              <div class="form-group">
+                <textarea class="form-control input-lg" autofocus="" placeholder="What do you want to share?"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div>
+              <button class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">Post</button>
+              <ul class="pull-left list-inline">
+                <li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li>
+                <li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li>
+                <li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="list-inline">
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li class="footer-menu-divider">⋅</li>
+              <li>
+                <a href="terms_privacy.html">Terms & Privacy</a>
+              </li>
+              <li class="footer-menu-divider">⋅</li>
+              <li>
+                <a href="contact.html">Contact Us</a>
+              </li>
+              <li class="footer-menu-divider">⋅</li>
+              <li>
+                <a href="mail_notify_tags.html">Notification Tags</a>
+              </li>
+              <li class="footer-menu-divider">⋅</li>
+              <li>
+                <a href="mail_notify_follow.html">Notification follower</a>
+              </li>
+              <li class="footer-menu-divider">⋅</li>
+              <li>
+                <a href="userhome_tag_creation.html">New iTags</a>
+              </li>
+              <li class="footer-menu-divider">⋅</li>
+              <li>
+                <a href="userhome_itags.html">Userhome iTags</a>
+              </li>
+              <li class="footer-menu-divider">⋅</li>
+              <li>
+                <a href="userhome_individual_itag.html">Userhome Individual itag</a>
+              </li>
+            </ul>
+            <p class="copyright text-muted small">Copyright &copy; talkeys.co.in. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
